@@ -1,5 +1,5 @@
 import React from "react";
-import ShiningStars from "../../assets/image/ShiningStarsHome-300x43.png";
+import ShiningStars from "../../../assets/image/ShiningStarsHome-300x43.png";
 
 const Logo = () => {
   return (

@@ -1,14 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./styles.scss";
-import ShiningStars from "../../assets/image/ShiningStarsHome-300x43.png";
-
-const Logo = () => {
-  return (
-    <div>
-      <img src={ShiningStars} alt="Shining-stars-logo" />
-    </div>
-  );
-};
+import Logo from "./logo/logo";
 
 const NavbarComponent = () => {
   const [show, setShow] = useState(true);
