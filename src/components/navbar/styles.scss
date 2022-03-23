@@ -1,7 +1,7 @@
 .navbar-container {
   --text: #f4f4f4;
   --text-inverse: #333;
-  --background: black;
+  --background: rgba(0, 0, 0, 0.8);
   position: sticky;
   top: 0;
   left: 0;
@@ -48,36 +48,6 @@
 
   &:hover::after {
     transform: scaleX(1);
-  }
-
-  &--btn {
-    border: 1.5px solid currentColor;
-    border-radius: 2em;
-    margin-left: 1em;
-    transition: background 250ms ease-in-out;
-    letter-spacing: 1px;
-    padding: 0.75em 1.5em;
-
-    &:hover {
-      background: var(--text);
-      color: var(--text-inverse);
-      border-color: var(--text);
-    }
-
-    &::after {
-      display: none;
-    }
-
-    &--highlight {
-      background: limegreen;
-      border-color: limegreen;
-      color: #333;
-
-      &:hover {
-        background: var(--text);
-        border-color: var(--text);
-      }
-    }
   }
 }
 
