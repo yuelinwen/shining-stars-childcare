@@ -1,5 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "./styles.scss";
+import ShiningStars from "../../assets/image/ShiningStarsHome-300x43.png";
+
+const Logo = () => {
+  return (
+    <div>
+      <img src={ShiningStars} alt="Shining-stars-logo" />
+    </div>
+  );
+};
 
 const NavbarComponent = () => {
   const [show, setShow] = useState(true);
@@ -20,7 +29,9 @@ const NavbarComponent = () => {
 
   return (
     <div className={`navbar-container ${show && "nav-scrolled"}`}>
-      <div className="navbar-logo">NavLogo</div>
+      <div className={`navbar-logo ${show && "logo-scrolled"}`}>
+        <Logo />
+      </div>
       <div className="navbar-navLinks">
         <ul className="nav-list">
           <li className="nav-list-item">

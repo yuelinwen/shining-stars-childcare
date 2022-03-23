@@ -46,8 +46,17 @@
     transition: transform 150ms ease-in-out;
   }
 
-  &:hover::after {
-    transform: scaleX(1);
+  &:hover {
+    color: #f56a6a;
+  }
+}
+
+.navbar-logo {
+  width: 300px;
+  height: auto;
+  img {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -56,4 +65,13 @@
   --text-inverse: #f4f4f4;
   --background: transparent;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+}
+
+.logo-scrolled {
+  width: 350px;
+  height: auto;
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
