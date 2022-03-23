@@ -32,7 +32,7 @@ const NavbarComponent = () => {
       <div className={`navbar-logo ${show && "logo-scrolled"}`}>
         <Logo />
       </div>
-      <div className="navbar-navLinks">
+      <div>
         <ul className="nav-list">
           <li className="nav-list-item">
             <a className="nav-link">Home</a>
