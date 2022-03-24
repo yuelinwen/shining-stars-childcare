@@ -1,5 +1,9 @@
 .tag-text {
-  color: #fff;
+  color: black;
+}
+
+.scrolled-text {
+  color: white;
 }
 
 .tag-text:hover {
@@ -9,8 +13,8 @@
 .navbar-container {
   --text: #f4f4f4;
   --text-inverse: #333;
-  --background: rgba(0, 0, 0, 0.8);
-  position: sticky;
+  --background: rgba(0, 0, 0, 0.5);
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -47,7 +51,7 @@
 }
 
 .navbar-logo {
-  width: 300px;
+  width: 200;
   height: auto;
   img {
     width: 100%;
@@ -59,11 +63,11 @@
   --text: #333;
   --text-inverse: #f4f4f4;
   --background: transparent;
-  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+  // box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
 }
 
 .logo-scrolled {
-  width: 350px;
+  width: 300px;
   height: auto;
   img {
     width: 100%;

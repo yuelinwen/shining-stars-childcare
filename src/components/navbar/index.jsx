@@ -11,7 +11,7 @@ const NavbarComponent = () => {
   const Close = () => setClick(false);
 
   const controlNavbar = () => {
-    if (window.scrollY > 100) {
+    if (window.scrollY > 50) {
       setShow(false);
     } else {
       setShow(true);
@@ -28,7 +28,7 @@ const NavbarComponent = () => {
   return (
     <>
       <div className={click ? "main-container" : ""} onClick={() => Close()} />
-      {!click && <NotificationComponent />}
+      {/* {!click && <NotificationComponent />} */}
       <div
         className={`navbar-container ${show && "nav-scrolled"}`}
         onClick={(e) => e.stopPropagation()}
@@ -50,7 +50,9 @@ const NavbarComponent = () => {
                 className="nav-links"
                 onClick={click ? handleClick : null}
               >
-                <span className="tag-text">Home</span>
+                <span className={show ? "tag-text" : "scrolled-text"}>
+                  Home
+                </span>
               </NavLink>
             </li>
             <li className="nav-item">
@@ -61,7 +63,9 @@ const NavbarComponent = () => {
                 className="nav-links"
                 onClick={click ? handleClick : null}
               >
-                <span className="tag-text">BOOK A TOUR</span>
+                <span className={show ? "tag-text" : "scrolled-text"}>
+                  BOOK A TOUR
+                </span>
               </NavLink>
             </li>
             <li className="nav-item">
@@ -72,7 +76,9 @@ const NavbarComponent = () => {
                 className="nav-links"
                 onClick={click ? handleClick : null}
               >
-                <span className="tag-text">HOURS OF OPERATION</span>
+                <span className={show ? "tag-text" : "scrolled-text"}>
+                  HOURS OF OPERATION
+                </span>
               </NavLink>
             </li>
             <li className="nav-item">
@@ -83,7 +89,9 @@ const NavbarComponent = () => {
                 className="nav-links"
                 onClick={click ? handleClick : null}
               >
-                <span className="tag-text">CONTACT US</span>
+                <span className={show ? "tag-text" : "scrolled-text"}>
+                  CONTACT US
+                </span>
               </NavLink>
             </li>
             <li className="nav-item">
@@ -94,7 +102,9 @@ const NavbarComponent = () => {
                 className="nav-links"
                 onClick={click ? handleClick : null}
               >
-                <span className="tag-text">CAREER</span>
+                <span className={show ? "tag-text" : "scrolled-text"}>
+                  CAREER
+                </span>
               </NavLink>
             </li>
           </ul>
