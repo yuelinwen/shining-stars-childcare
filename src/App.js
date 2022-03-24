@@ -1,11 +1,11 @@
 import './App.css';
+import HomePage from './page/homepage';
 import NavbarComponent from './components/navbar';
-import HeroComponent from './components/hero';
 function App() {
   return (
     <>
       <NavbarComponent />
-      <HeroComponent />
+      <HomePage />
     </>
   );
 }

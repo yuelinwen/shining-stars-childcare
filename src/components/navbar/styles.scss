@@ -7,6 +7,10 @@
   color: white;
 }
 
+.scrolled-text:hover {
+  color: #f56a6a;
+}
+
 .tag-text:hover {
   color: #f56a6a;
 }
@@ -147,7 +151,11 @@
     padding: 1.5rem;
     width: 100%;
     display: table;
+
+
   }
+
+
 
   .nav-icon {
     display: block;
