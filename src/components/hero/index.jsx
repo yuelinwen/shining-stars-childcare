@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.scss";
-import heroImg from "../../assets/image/rs=w_1534,m.webp";
+import heroImg from "../../assets/image/pexels-andrea-piacquadio-3755511.jpg";
 import { Button } from "@mui/material";
 
 const HeroComponent = () => {
