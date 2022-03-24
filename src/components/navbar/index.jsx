@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from "react";
 import "./styles.scss";
 import Logo from "./logo/logo";
+import { NavLink } from "react-router-dom";
+import NotificationComponent from "../notification";
 
 const NavbarComponent = () => {
   const [show, setShow] = useState(true);
+  const [click, setClick] = React.useState(false);
+  const handleClick = () => setClick(!click);
+  const Close = () => setClick(false);
+
   const controlNavbar = () => {
     if (window.scrollY > 100) {
       setShow(false);
@@ -20,31 +26,84 @@ const NavbarComponent = () => {
   }, []);
 
   return (
-    <div className={`navbar-container ${show && "nav-scrolled"}`}>
-      <div className={`navbar-logo ${show && "logo-scrolled"}`}>
-        <Logo />
+    <>
+      <div className={click ? "main-container" : ""} onClick={() => Close()} />
+      {!click && <NotificationComponent />}
+      <div
+        className={`navbar-container ${show && "nav-scrolled"}`}
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="nav-container">
+          <NavLink
+            exact
+            to="/"
+            className={`navbar-logo ${show && "logo-scrolled"}`}
+          >
+            <Logo />
+          </NavLink>
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/"
+                activeClassName="active"
+                className="nav-links"
+                onClick={click ? handleClick : null}
+              >
+                <span className="tag-text">Home</span>
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/about"
+                activeClassName="active"
+                className="nav-links"
+                onClick={click ? handleClick : null}
+              >
+                <span className="tag-text">BOOK A TOUR</span>
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/blog"
+                activeClassName="active"
+                className="nav-links"
+                onClick={click ? handleClick : null}
+              >
+                <span className="tag-text">HOURS OF OPERATION</span>
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/contact"
+                activeClassName="active"
+                className="nav-links"
+                onClick={click ? handleClick : null}
+              >
+                <span className="tag-text">CONTACT US</span>
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/contact"
+                activeClassName="active"
+                className="nav-links"
+                onClick={click ? handleClick : null}
+              >
+                <span className="tag-text">CAREER</span>
+              </NavLink>
+            </li>
+          </ul>
+          <div className="nav-icon" onClick={handleClick}>
+            <i className={click ? "fa fa-times" : "fa fa-bars"}></i>
+          </div>
+        </div>
       </div>
-      <div>
-        <ul className="nav-list">
-          <li className="nav-list-item">
-            <a className="nav-link">Home</a>
-          </li>
-          <li className="nav-list-item">
-            <a className="nav-link">Home</a>
-          </li>
-          <li className="nav-list-item">
-            <a className="nav-link">Home</a>
-          </li>
-          <li className="nav-list-item">
-            <a className="nav-link">Home</a>
-          </li>
-          <li className="nav-list-item">
-            <a className="nav-link">Home</a>
-          </li>
-        </ul>
-      </div>
-      <div className="navbar-btn">Book a tour</div>
-    </div>
+    </>
   );
 };
 
