@@ -12,29 +12,66 @@ import toddler from "../../assets/image/new_b_toddler.jpeg";
 import preschool from "../../assets/image/pre_school.jpeg";
 import jk from "../../assets/image/jk_b.jpeg";
 import { Button } from "@mui/material";
+import { createTheme, ThemeProvider } from "@mui/material";
+
+const theme = createTheme({
+  breakpoints: {
+    values: {
+      mobile: 0,
+      tablet: 640,
+      laptop: 1024,
+      desktop: 1280,
+    },
+  },
+});
 
 const CardItem = ({ title, img }) => {
   return (
-    <Card sx={{ maxHeight: 600 }}>
-      <CardActionArea>
+    <Card
+      sx={{
+        height: {
+          xs: 250, // theme.breakpoints.up('xs')
+          sm: "auto", // theme.breakpoints.up('sm')
+          md: "auto", // theme.breakpoints.up('md')
+          lg: "auto", // theme.breakpoints.up('lg')
+        },
+        width: {
+          xs: 400, // theme.breakpoints.up('xs')
+          sm: 400, // theme.breakpoints.up('sm')
+          md: 300, // theme.breakpoints.up('md')
+          lg: 400, // theme.breakpoints.up('lg')
+        },
+      }}
+    >
         <CardMedia
+          sx={{
+            height: {
+              xs: 100, // theme.breakpoints.up('xs')
+              sm: 270, // theme.breakpoints.up('sm')
+              md: 270, // theme.breakpoints.up('md')
+              lg: 350, // theme.breakpoints.up('lg')
+            },
+            width: {
+              xs: 400, // theme.breakpoints.up('xs')
+              sm: 400, // theme.breakpoints.up('sm')
+              md: 300, // theme.breakpoints.up('md')
+              lg: 400, // theme.breakpoints.up('lg')
+            },
+          }}
           component="img"
-          height="350"
+          // height="150"
           image={img}
           alt={`{title} img`}
           className="card-media"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="h5" component="div" style={{textAlign:"center"}}>
             {title}
           </Typography>
-          <Typography variant="body1" color="text.secondary">
-            For toddlers we have a program that has been developed to meet their
-            needs of limitless energy, natural curiosity for learning and
-            struggle for independence.
+          <Typography variant="body1" color="text.secondary" style={{textAlign:"center"}}>
+            <Button  variant="contained" color="error">LEARN MORE</Button>
           </Typography>
         </CardContent>
-      </CardActionArea>
     </Card>
   );
 };
@@ -44,19 +81,19 @@ const ProgramComponent = () => {
     <div className="program-container">
       <h1>Our Program</h1>
       <Row className="programs">
-        <Col lg={4} md={12} className="program mb-4">
+        <Col md={4} xs={12} className="program">
           <CardItem
             title={"Toddler Program (16 months to 2.5 years)"}
             img={toddler}
           />
         </Col>
-        <Col lg={4} md={12} className="program mb-4">
+        <Col md={4} xs={12} className="program">
           <CardItem
             title={"Toddler Program (16 months to 2.5 years)"}
             img={preschool}
           />
         </Col>
-        <Col lg={4} md={12} className="program mb-4">
+        <Col md={4} xs={12} className="program">
           <CardItem
             title={"Toddler Program (16 months to 2.5 years)"}
             img={jk}

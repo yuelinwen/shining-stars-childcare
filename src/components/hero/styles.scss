@@ -22,7 +22,7 @@
     align-items: center;
 
     h1 {
-      font-size: 4rem;
+      // font-size: 4rem;
       text-align: center;
       text-transform: uppercase;
       color: white;
@@ -38,12 +38,17 @@
       color: white;
     }
   }
+  .programs {
+    .program {
+      height: 100%;
+    }
+  }
 }
 
 @media screen and (max-width: 960px) {
   .hero-text {
     .hero-text h1 {
-      font-size: 1rem;
+      // font-size: 1rem;
       text-align: center;
       text-transform: uppercase;
     }
