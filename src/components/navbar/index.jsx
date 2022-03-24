@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./styles.scss";
 import Logo from "./logo/logo";
 import { NavLink } from "react-router-dom";
-import NotificationComponent from "../notification";
+// import NotificationComponent from "../notification";
 
 const NavbarComponent = () => {
   const [show, setShow] = useState(true);

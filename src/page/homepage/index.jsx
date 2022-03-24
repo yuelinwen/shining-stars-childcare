@@ -1,6 +1,6 @@
 import React from "react";
 import HeroComponent from "../../components/hero";
-// import CarouselComponent from "../../components/carousel";
+import PhotoComponent from "../../components/photo";
 import MidInfoComponent from "../../components/information";
 import ProgramComponent from "../../components/program";
 const HomePage = () => {
@@ -9,6 +9,7 @@ const HomePage = () => {
       <HeroComponent />
       <MidInfoComponent />
       <ProgramComponent />
+      <PhotoComponent />
     </>
   );
 };
