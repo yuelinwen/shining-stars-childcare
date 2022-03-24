@@ -1,5 +1,6 @@
 .tag-text {
   color: black;
+  font-weight: 500;
 }
 
 .scrolled-text {
@@ -137,6 +138,7 @@
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
+    
   }
   .nav-item .active {
     border: none;
@@ -157,5 +159,13 @@
     cursor: pointer;
     color: #f56a6a;
     z-index: 100;
+  }
+
+  .tag-text {
+    color: white;
+  }
+
+  #first-item{
+    margin-top: 75px;
   }
 }

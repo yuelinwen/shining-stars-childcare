@@ -42,7 +42,7 @@ const NavbarComponent = () => {
             <Logo />
           </NavLink>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item">
+            <li className="nav-item" id="first-item">
               <NavLink
                 exact
                 to="/"
