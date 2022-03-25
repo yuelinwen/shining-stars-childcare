@@ -13,7 +13,7 @@ import jk from "../../assets/image/jk_b.jpeg";
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 
-const CardItem = ({ title, img }) => {
+const CardItem = ({ program, title, img }) => {
   return (
     <Card
       sx={{
@@ -45,6 +45,14 @@ const CardItem = ({ title, img }) => {
             md: 300, // theme.breakpoints.up('md')
             lg: 400, // theme.breakpoints.up('lg')
           },
+          ":hover": {
+            width: {
+              xs: 410, // theme.breakpoints.up('xs')
+              sm: 410, // theme.breakpoints.up('sm')
+              md: 310, // theme.breakpoints.up('md')
+              lg: 410, // theme.breakpoints.up('lg')
+            },
+          },
         }}
         component="img"
         // height="150"
@@ -66,7 +74,7 @@ const CardItem = ({ title, img }) => {
           color="text.secondary"
           style={{ textAlign: "center" }}
         >
-          <Link to={`/program`}>
+          <Link to={`/${program}`}>
             <Button variant="contained" color="error">
               LEARN MORE
             </Button>
@@ -84,18 +92,21 @@ const ProgramComponent = () => {
       <Row className="programs">
         <Col md={4} xs={12} className="program">
           <CardItem
+            program={"toddler-program"}
             title={"Toddler Program (16 months to 2.5 years)"}
             img={toddler}
           />
         </Col>
         <Col md={4} xs={12} className="program">
           <CardItem
+            program={"preschool-program"}
             title={"Preschool Program (2.5 years to 3.5 years)"}
             img={preschool}
           />
         </Col>
         <Col md={4} xs={12} className="program">
           <CardItem
+            program={"junior-senior-kid-program"}
             title={"JK /SK Program (3.5 years up to 7 years)"}
             img={jk}
           />

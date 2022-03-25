@@ -11,9 +11,11 @@ import ContactPage from './page/contactPage';
 import NutritionPage from './page/nutritionPage';
 import OperationInfoPage from './page/operationInfoPage';
 import OurMissionPage from './page/ourMissionPage';
-import ProgramPage from './page/programPage';
 import StaffPage from './page/staffPage';
 import PageNotFound from './page/notfoundPage'
+import ToddlerPage from './page/programPages/toddlerPage';
+import JkskPage from './page/programPages/jkskPage';
+import PreSchoolPage from './page/programPages/preschoolPage';
 
 
 function App() {
@@ -29,7 +31,9 @@ function App() {
         <Route exact path="/nutrition" element={<NutritionPage />} />
         <Route exact path="/hour" element={<OperationInfoPage />} />
         <Route exact path="/mission" element={<OurMissionPage />} />
-        <Route exact path="/program" element={<ProgramPage />} />
+        <Route exact path="/toddler-program" element={<ToddlerPage />} />
+        <Route exact path="/junior-senior-kid-program" element={<JkskPage />} />
+        <Route exact path="/preschool-program" element={<PreSchoolPage />} />
         <Route exact path="/staff" element={<StaffPage />} />
         <Route path="/not-found" element={<PageNotFound />} />
       </Routes>
