@@ -1,0 +1,30 @@
+.post-container {
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+}
+
+.post-inner {
+  width: 80%;
+}
+
+.post-img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.post-content {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.post-item {
+  overflow: hidden;
+}
+

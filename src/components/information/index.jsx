@@ -14,6 +14,7 @@ const InformationComponent = () => {
         exciting, stimulating and educating programs for Toddlers, Preschoolers
         and Kindergarteners.
         <br />
+        <br />
         Please feel free to call, email or book a tour at your convenience. We
         will be happy to give your family a tour of our facilities, meet our
         teachers and raise any questions that you may have regarding our

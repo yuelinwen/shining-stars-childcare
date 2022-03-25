@@ -1,12 +1,10 @@
 import React from "react";
-import "./styles.css"
+import "./styles.css";
 const NotificationComponent = () => {
   return (
     <>
       <div className="notification">
-        <div className="notification-messages">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-        </div>
+        <div className="notification-messages">COVID 19 policy information</div>
       </div>
     </>
   );
