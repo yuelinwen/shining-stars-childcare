@@ -1,0 +1,11 @@
+.page-outer img {
+    width: 50%;
+    float: left;
+    padding: 0 1.5em 1em 0;
+    top: 0.25em;
+}
+
+.staff-content {
+    padding: 10%;
+}
+

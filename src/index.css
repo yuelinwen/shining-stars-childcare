@@ -5,7 +5,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-h1{
+h1 {
     font-family: 'Mali', cursive;
     font-weight: 600;
     font-size: 3rem;
@@ -13,4 +13,14 @@ h1{
 
 p {
     font-size: 1.2rem;
-  }
+}
+
+@media screen and (max-width: 767px) {
+
+
+    p {
+        font-size: 1.1em;
+    }
+
+
+}

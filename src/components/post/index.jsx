@@ -12,7 +12,7 @@ const PostComponent = () => {
   return (
     <div className="post-container">
       <Container className="post-inner">
-        <Row className="my-2 post-item">
+        <Row className="my-2 post-item row-flex">
           <Col md={6} sm={12} className="order-1">
             <img src={Image1} alt="our mission" className="post-img" />
           </Col>
@@ -31,7 +31,7 @@ const PostComponent = () => {
           </Col>
         </Row>
 
-        <Row className="my-2 post-item">
+        <Row className="my-2 post-item row-flex">
           <Col md={6} sm={12} className="order-md-1 order-2 my-3 post-content">
             <h4>Nutrition</h4>
             <p>
@@ -52,7 +52,7 @@ const PostComponent = () => {
           </Col>
         </Row>
 
-        <Row className="my-2 post-item">
+        <Row className="my-2 post-item row-flex">
           <Col md={6} sm={12} className="order-1">
             <img src={Image3} alt="our staff" className="post-img" />
           </Col>
@@ -72,7 +72,7 @@ const PostComponent = () => {
           </Col>
         </Row>
 
-        <Row className="my-2 post-item">
+        <Row className="my-2 post-item row-flex">
           <Col md={6} sm={12} className="order-md-1 order-2 my-3 post-content">
             <h4>Our Classroom</h4>
             <Link to={"/classroom"}>

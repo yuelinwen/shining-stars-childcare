@@ -21,14 +21,22 @@
   h1{
     text-align: center;
   }
+
+  h3{
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 767px) {
-  .outer {
+  .page-outer {
     padding: 25% 5% 25% 5%;
 
-    .inner {
+    .page-inner {
       width: 90%;
     }
+    p{
+      font-size: 1.1em;
+    }
   }
+  
 }

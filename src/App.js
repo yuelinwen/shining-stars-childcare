@@ -8,14 +8,14 @@ import BookingPage from './page/bookingPage';
 import CareerPage from './page/careerPage';
 import ClassroomPage from './page/classroomPage';
 import ContactPage from './page/contactPage';
-import NutritionPage from './page/nutritionPage';
-import OperationInfoPage from './page/operationInfoPage';
-import OurMissionPage from './page/ourMissionPage';
-import StaffPage from './page/staffPage';
+import NutritionPage from './page/postPage/nutritionPage';
+import OperationInfoPage from './page/postPage/operationInfoPage';
+import OurMissionPage from './page/postPage/missionPage';
+import StaffPage from './page/postPage/staffPage';
 import PageNotFound from './page/notfoundPage'
-import ToddlerPage from './page/programPages/toddlerPage';
-import JkskPage from './page/programPages/jkskPage';
-import PreSchoolPage from './page/programPages/preschoolPage';
+import ToddlerPage from './page/postPage/toddlerPage';
+import JkskPage from './page/postPage/jkskPage';
+import PreSchoolPage from './page/postPage/preschoolPage';
 
 
 function App() {
@@ -35,7 +35,7 @@ function App() {
         <Route exact path="/junior-senior-kid-program" element={<JkskPage />} />
         <Route exact path="/preschool-program" element={<PreSchoolPage />} />
         <Route exact path="/staff" element={<StaffPage />} />
-        <Route path="/not-found" element={<PageNotFound />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
       <FooterComponent />
     </>
