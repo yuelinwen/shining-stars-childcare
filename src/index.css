@@ -16,11 +16,7 @@ p {
 }
 
 @media screen and (max-width: 767px) {
-
-
     p {
         font-size: 1.1em;
     }
-
-
 }
