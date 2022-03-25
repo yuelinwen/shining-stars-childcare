@@ -5,20 +5,17 @@ const FooterComponent = () => {
   return (
     <div className="footer-container">
       <div className="footer-info">
-        <a href="">
-          {" "}
+        <a href="#">
           <FaInstagram />
         </a>
-        <a href="">
-          {" "}
+        <a href="#">
           <FaYoutube />
         </a>
-        <a href="">
-          {" "}
+        <a href="#">
           <FaFacebook />
         </a>
       </div>
-      <p> © 2022 Shining Stars Child Care Centre. All rights reserved.</p>
+      <p className="text"> © 2022 Shining Stars Child Care Centre. All rights reserved.</p>
     </div>
   );
 };

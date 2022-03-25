@@ -26,3 +26,10 @@
     font-size: 1.2em;
   }
 }
+@media (max-width: 960px) {
+  .footer-container {
+    .text {
+      font-size: 0.8em;
+    }
+  }
+}

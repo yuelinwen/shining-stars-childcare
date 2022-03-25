@@ -1,0 +1,13 @@
+.map-container {
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+
+  h1 {
+    text-align: center;
+  }
+}
