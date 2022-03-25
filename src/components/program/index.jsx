@@ -11,6 +11,7 @@ import toddler from "../../assets/image/new_b_toddler.jpeg";
 import preschool from "../../assets/image/pre_school.jpeg";
 import jk from "../../assets/image/jk_b.jpeg";
 import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const CardItem = ({ title, img }) => {
   return (
@@ -65,9 +66,11 @@ const CardItem = ({ title, img }) => {
           color="text.secondary"
           style={{ textAlign: "center" }}
         >
-          <Button variant="contained" color="error">
-            LEARN MORE
-          </Button>
+          <Link to={`/program`}>
+            <Button variant="contained" color="error">
+              LEARN MORE
+            </Button>
+          </Link>
         </Typography>
       </CardContent>
     </Card>
@@ -87,13 +90,13 @@ const ProgramComponent = () => {
         </Col>
         <Col md={4} xs={12} className="program">
           <CardItem
-            title={"Toddler Program (16 months to 2.5 years)"}
+            title={"Preschool Program (2.5 years to 3.5 years)"}
             img={preschool}
           />
         </Col>
         <Col md={4} xs={12} className="program">
           <CardItem
-            title={"Toddler Program (16 months to 2.5 years)"}
+            title={"JK /SK Program (3.5 years up to 7 years)"}
             img={jk}
           />
         </Col>

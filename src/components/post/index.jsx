@@ -2,6 +2,7 @@ import React from "react";
 import "./styles.scss";
 import { Container, Row, Col } from "react-bootstrap";
 import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
 import Image1 from "../../assets/image/sscc_main.jpeg";
 import Image2 from "../../assets/image/slide-image-3.jpeg";
 import Image3 from "../../assets/image/sscc_main.jpeg";
@@ -22,9 +23,11 @@ const PostComponent = () => {
               Region, servicing the communities of Richmond Hill, Vaughan and
               Markham. We are licensed by the Ministry of Education.
             </p>
-            <Button variant="outlined" size="large" color="error">
-              MORE
-            </Button>
+            <Link to={"/mission"}>
+              <Button variant="outlined" size="large" color="error">
+                MORE
+              </Button>
+            </Link>
           </Col>
         </Row>
 
@@ -38,9 +41,11 @@ const PostComponent = () => {
               and cook onsite. All meals are in accordance with Canada's Food
               Guide.
             </p>
-            <Button variant="outlined" size="large" color="error">
-              MORE
-            </Button>
+            <Link to={"/nutrition"}>
+              <Button variant="outlined" size="large" color="error">
+                MORE
+              </Button>
+            </Link>
           </Col>
           <Col md={6} sm={12} className="order-md-2  order-1">
             <img src={Image2} alt="nutrition" className="post-img" />
@@ -59,18 +64,22 @@ const PostComponent = () => {
               teachers works to satisfy the needs of each child and make them
               feel at home.
             </p>
-            <Button variant="outlined" size="large" color="error">
-              MORE
-            </Button>
+            <Link to={"/staff"}>
+              <Button variant="outlined" size="large" color="error">
+                MORE
+              </Button>
+            </Link>
           </Col>
         </Row>
 
         <Row className="my-2 post-item">
           <Col md={6} sm={12} className="order-md-1 order-2 my-3 post-content">
             <h4>Our Classroom</h4>
-            <Button variant="outlined" size="large" color="error">
-              MORE
-            </Button>
+            <Link to={"/classroom"}>
+              <Button variant="outlined" size="large" color="error">
+                MORE
+              </Button>
+            </Link>
           </Col>
 
           <Col md={6} sm={12} className="order-md-2  order-1">
