@@ -10,7 +10,7 @@ import "./styles.css";
 
 const staffPage = () => {
   return (
-    <div className="staff-page">
+    <div className="staff-page page-outer">
       <h1>Our Team</h1>
       <div className="page-inner">
         <Row className="row-flex">

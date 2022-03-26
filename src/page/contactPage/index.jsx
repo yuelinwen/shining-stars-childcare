@@ -1,11 +1,12 @@
-import React from 'react';
-import "./styles.scss"
+import React from "react";
+
 const ContactPage = () => {
-    return (
-        <div className='contact-container'>
-            Contact
-        </div>
-    );
-}
+  return (
+    <div className="page-outer">
+      <h1>Our Classroom</h1>
+      <div className="page-inner"></div>
+    </div>
+  );
+};
 
 export default ContactPage;
