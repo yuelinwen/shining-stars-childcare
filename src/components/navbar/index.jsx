@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./styles.scss";
 import Logo from "./logo/logo";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import NotificationComponent from "../notification";
 
 const NavbarComponent = () => {
@@ -34,16 +34,16 @@ const NavbarComponent = () => {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="nav-container">
-          <NavLink
+          <Link
             exact
             to="/"
             className={`navbar-logo ${show && "logo-scrolled"}`}
           >
             <Logo />
-          </NavLink>
+          </Link>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item" id="first-item">
-              <NavLink
+              <Link
                 exact
                 to="/"
                 activeClassName="active"
@@ -53,10 +53,10 @@ const NavbarComponent = () => {
                 <span className={show ? "tag-text" : "scrolled-text"}>
                   Home
                 </span>
-              </NavLink>
+              </Link>
             </li>
             <li className="nav-item">
-              <NavLink
+              <Link
                 exact
                 to="/booking"
                 activeClassName="active"
@@ -66,10 +66,10 @@ const NavbarComponent = () => {
                 <span className={show ? "tag-text" : "scrolled-text"}>
                   BOOK A TOUR
                 </span>
-              </NavLink>
+              </Link>
             </li>
             <li className="nav-item">
-              <NavLink
+              <Link
                 exact
                 to="/hour"
                 activeClassName="active"
@@ -79,10 +79,10 @@ const NavbarComponent = () => {
                 <span className={show ? "tag-text" : "scrolled-text"}>
                   HOURS OF OPERATION
                 </span>
-              </NavLink>
+              </Link>
             </li>
             <li className="nav-item">
-              <NavLink
+              <Link
                 exact
                 to="/contact"
                 activeClassName="active"
@@ -92,10 +92,10 @@ const NavbarComponent = () => {
                 <span className={show ? "tag-text" : "scrolled-text"}>
                   CONTACT US
                 </span>
-              </NavLink>
+              </Link>
             </li>
             <li className="nav-item">
-              <NavLink
+              <Link
                 exact
                 to="/career"
                 activeClassName="active"
@@ -105,7 +105,7 @@ const NavbarComponent = () => {
                 <span className={show ? "tag-text" : "scrolled-text"}>
                   CAREER
                 </span>
-              </NavLink>
+              </Link>
             </li>
           </ul>
           <div className="nav-icon" onClick={handleClick}>
