@@ -13,8 +13,8 @@ const BookingPage = () => {
           the following form and we will contact you soon.
         </span>
         <Row>
-          <Col></Col>
-          <Col></Col>
+          <Col>form</Col>
+          <Col>info</Col>
         </Row>
       </div>
     </div>
