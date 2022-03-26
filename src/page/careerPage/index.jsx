@@ -15,10 +15,11 @@ const CareerPage = () => {
           the interests that emerge, leading gatherings, as well as outdoor
           walks and activities on-site and in the attached provincial park.
         </span>
-        <h5>Apply for the position</h5>
+ 
         <Row>
           <Col className="booking-form my-5">
             <Form>
+            <h5>Apply for the position</h5>
               <Row className="mb-3">
                 <Form.Group as={Col} controlId="formGridName">
                   <Form.Label>Your Name</Form.Label>
