@@ -1,6 +1,8 @@
 import React from "react";
 import "./styles.scss";
 import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
+
 const InformationComponent = () => {
   return (
     <div className="info-container">
@@ -21,10 +23,12 @@ const InformationComponent = () => {
         programs, curriculum and registration. We look forward to meeting you
         all soon
       </p>
-
-      <Button variant="contained" size="large" color="error">
+<Link to={"/about"}>
+<Button variant="contained" size="large" color="error">
         Read More
       </Button>
+</Link>
+
     </div>
   );
 };

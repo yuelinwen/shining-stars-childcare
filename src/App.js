@@ -16,7 +16,7 @@ import PageNotFound from './page/notfoundPage'
 import ToddlerPage from './page/postPage/toddlerPage';
 import JkskPage from './page/postPage/jkskPage';
 import PreSchoolPage from './page/postPage/preschoolPage';
-
+import AboutPage from './page/aboutPage';
 
 function App() {
   return (
@@ -26,6 +26,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route exact path="/booking" element={<BookingPage />} />
+          <Route exact path="/about" element={<AboutPage />} />
           <Route exact path="/career" element={<CareerPage />} />
           <Route exact path="/classroom" element={<ClassroomPage />} />
           <Route exact path="/contact" element={<ContactPage />} />
