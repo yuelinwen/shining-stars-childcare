@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f23f5ce9.css",
+    "main.js": "/static/js/main.1c115572.js",
+    "static/js/787.5e1cd139.chunk.js": "/static/js/787.5e1cd139.chunk.js",
+    "static/media/pexels-lukas-296301.jpg": "/static/media/pexels-lukas-296301.f63d99f93450e27b3795.jpg",
+    "static/media/pexels-anna-shvets-11286037.jpg": "/static/media/pexels-anna-shvets-11286037.4d2d265707b516c0cb68.jpg",
+    "static/media/pexels-andrea-piacquadio-3755511.jpg": "/static/media/pexels-andrea-piacquadio-3755511.d4efcea7baf3c2da4268.jpg",
+    "static/media/1630332665_0_4-1.png": "/static/media/1630332665_0_4-1.ccf27a2eba384608f8c8.png",
+    "static/media/1630332912_0_5-1.png": "/static/media/1630332912_0_5-1.96ac53e89b022728d339.png",
+    "static/media/1630332555_0_1-1.png": "/static/media/1630332555_0_1-1.3450e9f43aa7987d9bd1.png",
+    "static/media/jk_b.jpeg": "/static/media/jk_b.956a0c435191d969d6a3.jpeg",
+    "static/media/1635604890_3.jpeg": "/static/media/1635604890_3.e06413cdc44e6867b466.jpeg",
+    "static/media/1630332784_0_3-1.jpeg": "/static/media/1630332784_0_3-1.6fa18c9c4aba649e9e0e.jpeg",
+    "static/media/1635605074_8.jpeg": "/static/media/1635605074_8.6109f6f563d3fd972613.jpeg",
+    "static/media/1635604989_4.jpeg": "/static/media/1635604989_4.ce859e7d7a4a7b09c215.jpeg",
+    "static/media/1635605027_6.jpeg": "/static/media/1635605027_6.2e40c474335e9d36893b.jpeg",
+    "static/media/sscc_main.jpeg": "/static/media/sscc_main.769dc1f41dbddb5d6e0d.jpeg",
+    "static/media/1635604875_2.jpeg": "/static/media/1635604875_2.3f9358f562bd67cfc9b8.jpeg",
+    "static/media/new_b_toddler.jpeg": "/static/media/new_b_toddler.1094789e857de2d8f829.jpeg",
+    "static/media/pre_school.jpeg": "/static/media/pre_school.2006487f7421c8b4b794.jpeg",
+    "static/media/WechatIMG271.jpeg": "/static/media/WechatIMG271.b5bdf9614f14b5f2a564.jpeg",
+    "static/media/slide-image-16.jpeg": "/static/media/slide-image-16.49a48726de5617fd809f.jpeg",
+    "static/media/slide-image-3.jpeg": "/static/media/slide-image-3.ad23efa4734a1b5eeec9.jpeg",
+    "static/media/1630333012_0_2-1.jpeg": "/static/media/1630333012_0_2-1.6a6449499ef245d15d67.jpeg",
+    "static/media/ShiningStarsHome-300x43.png": "/static/media/ShiningStarsHome-300x43.2c3f17ee788dc5af7ad9.png",
+    "index.html": "/index.html",
+    "main.f23f5ce9.css.map": "/static/css/main.f23f5ce9.css.map",
+    "main.1c115572.js.map": "/static/js/main.1c115572.js.map",
+    "787.5e1cd139.chunk.js.map": "/static/js/787.5e1cd139.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f23f5ce9.css",
+    "static/js/main.1c115572.js"
+  ]
+}
